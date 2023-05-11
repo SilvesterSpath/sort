@@ -1,7 +1,12 @@
-console.log('hi there');
+class Sorter {
+  /*  collection: number[];
 
-const logSomething = () => {
-  console.log('something');
-};
+  constructor(collection: number[]) {
+    this.collection = collection;
+  } */
 
-logSomething();
+  //totally equivalent this line
+  constructor(public collection: number[]) {}
+}
+
+const sorter = new Sorter([10, 3, -5, 0]);
