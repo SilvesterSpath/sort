@@ -16,6 +16,7 @@ class Sorter {
         // All of this only works if collection is a number[]
         // If collection is an array of numbers
         if (this.collection instanceof Array) {
+          // collectin === number[]
           if (this.collection[j] > this.collection[j + 1]) {
             const temp = this.collection[j];
             this.collection[j] = this.collection[j + 1];
@@ -26,6 +27,7 @@ class Sorter {
         // If collection is a string, do this logic instead:
         // ~~~logic to compare and swap characters in a string
         if (typeof this.collection === 'string') {
+          // collection === string
         }
       }
     }
