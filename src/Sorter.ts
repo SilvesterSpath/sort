@@ -1,5 +1,5 @@
 interface Sortable {
-  elements: number[] | string;
+  data: number[] | string;
   length: number;
   swap: (left: number, right: number) => void;
   compare: (left: number, right: number) => boolean;
