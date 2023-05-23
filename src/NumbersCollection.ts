@@ -16,4 +16,8 @@ export class NumbersCollection {
     this.data[leftIndex] = this.data[rightIndex];
     this.data[rightIndex] = temp;
   }
+
+  get elements(): number[] {
+    return this.data;
+  }
 }
