@@ -10,7 +10,8 @@ class CharactersCollection {
         return this.data.length;
     }
     compare(leftIndex, rightIndex) {
-        if (this.data[leftIndex] > this.data[rightIndex])
+        if (this.data[leftIndex].toLocaleLowerCase() >
+            this.data[rightIndex].toLocaleLowerCase())
             return true;
         return false;
     }

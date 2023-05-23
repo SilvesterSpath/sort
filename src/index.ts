@@ -7,7 +7,7 @@ const sorter = new Sorter(numbersCollection);
 sorter.sort();
 console.log(sorter.collection.data);
 
-const charactersCollection = new CharactersCollection('string');
+const charactersCollection = new CharactersCollection('String');
 const sorter2 = new Sorter(charactersCollection);
 sorter2.sort();
 console.log(sorter2.collection.data);

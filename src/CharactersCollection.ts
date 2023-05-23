@@ -7,7 +7,11 @@ export class CharactersCollection {
   }
 
   compare(leftIndex: number, rightIndex: number): boolean {
-    if (this.data[leftIndex] > this.data[rightIndex]) return true;
+    if (
+      this.data[leftIndex].toLocaleLowerCase() >
+      this.data[rightIndex].toLocaleLowerCase()
+    )
+      return true;
     return false;
   }
 
