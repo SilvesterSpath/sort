@@ -50,4 +50,38 @@ export class LinkedList {
     }
     throw new Error('Index out of bounds');
   }
+
+  compare(leftIndex: number, rightIndex: number): boolean {
+    if (this.head === null) {
+      throw new Error('List is empty');
+    }
+
+    return this.at(leftIndex).data > this.at(rightIndex).data;
+  }
+
+  swap(leftIndex: number, rightIndex: number): void {
+    if (this.head === null) {
+      throw new Error('List is empty');
+    }
+
+    // here we not swapping the actual node, only the value
+    const leftNode = this.at(leftIndex);
+    const rightNode = this.at(rightIndex);
+
+    const temp = leftNode.data;
+    leftNode.data = rightNode.data;
+    rightNode.data = temp;
+  }
+
+  print(): void {
+    if (!this.head) {
+      return;
+    }
+
+    let node: Node | null = this.head;
+    while (node) {
+      console.log(node.data);
+      node = node.next;
+    }
+  }
 }
