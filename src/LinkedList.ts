@@ -5,10 +5,7 @@ export class Node {
 
 export class LinkedList {
   head: Node | null = null;
-  data;
-  constructor(data: Node) {
-    this.data = data;
-  }
+  constructor(public data: number) {}
 
   add(data: number): void {
     const node = new Node(data);

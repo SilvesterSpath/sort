@@ -10,8 +10,8 @@ class Node {
 exports.Node = Node;
 class LinkedList {
     constructor(data) {
-        this.head = null;
         this.data = data;
+        this.head = null;
     }
     add(data) {
         const node = new Node(data);

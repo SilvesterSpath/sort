@@ -1,7 +1,5 @@
-import { Node } from './LinkedList';
-
 interface Sortable {
-  data: number[] | string | Node;
+  data: number[] | string | number;
   length: number;
   swap: (left: number, right: number) => void;
   compare: (left: number, right: number) => boolean;
