@@ -1,10 +1,14 @@
-class Node {
+export class Node {
   next: Node | null = null;
   constructor(public data: number) {}
 }
 
 export class LinkedList {
   head: Node | null = null;
+  data;
+  constructor(data: Node) {
+    this.data = data;
+  }
 
   add(data: number): void {
     const node = new Node(data);

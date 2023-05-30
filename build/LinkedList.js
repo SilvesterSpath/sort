@@ -1,15 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.LinkedList = void 0;
+exports.LinkedList = exports.Node = void 0;
 class Node {
     constructor(data) {
         this.data = data;
         this.next = null;
     }
 }
+exports.Node = Node;
 class LinkedList {
-    constructor() {
+    constructor(data) {
         this.head = null;
+        this.data = data;
     }
     add(data) {
         const node = new Node(data);
